@@ -1,0 +1,24 @@
+Absolute /
+Relative //
+
+xpath=//tagname[@attribute='value']
+xpath=//*[contains(@type,'text')]
+Xpath=//input[@type='submit' or @name='btnLogin']
+Xpath=//input[@type='submit' and @name='btnLogin']
+=//input(contains(text(),'asd'))
+
+axes methods
+Following
+Preceding
+Ancestor
+Descendent
+Child
+Parent
+Following-sibling
+Self
+
+css=tag#id
+css=tag.class
+css=tag[attribute=value]
+css=tag.class[attribute=value]
+ass=tag.contains("inner text")

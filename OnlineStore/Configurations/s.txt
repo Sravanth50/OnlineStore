@@ -1,0 +1,7 @@
+ BrowserFactory.InitBrowser("Chrome");
+            BrowserFactory.LoadApplication(ConfigurationManager.AppSettings["URL"]);
+            var homePage = new HomePage(BrowserFactory.Driver);
+            homePage.ClickOnMyAccount();         
+            var loginPage = new LoginPage(BrowserFactory.Driver);
+            loginPage.loginToApplication("LoginTest");
+            BrowserFactory.CloseAllDrivers();
